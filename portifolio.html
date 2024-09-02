@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Dias Morales</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(7, 83, 170);
+        }
+
+        .container {
+            display: grid;
+        }
+        nav {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(7, 83, 170);
+            border-bottom: 50px;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+        .principal {
+            background-color: rgb(7, 83, 170);
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: rgb(219, 224, 223);
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            left: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            color: rgb(219, 224, 223);
+            gap: 20px;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            color: rgb(219, 224, 223);
+            padding: 25px 45px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: rgb(5, 64, 173);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header class="container">
+        <h1>
+            Portofólio
+        </h1>
+    </header>
+    <section class="principal">
+        <br><br><br><br><br>
+       <a href="https://github.com/Christian-DM/Projects">Clique no Link para acessar o repositório do Github.</a>
+        <br><br><br><br><br>
+    </section> 
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>

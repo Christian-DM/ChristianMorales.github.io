@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Dias Morales</title>
+    <style>
+        body { /*Estilização do body*/
+            margin: 0;
+            background-color: rgb(7, 83, 170);
+        }
+
+        .container {
+            display: grid;
+        }
+        nav {/*Menu de navegação principal*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(7, 83, 170);
+            border-bottom: 50px;
+        }
+
+        header {/*Estilização do cabeçalho*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu { /*Centraliza o menu*/
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .principal { /*Estilização do conteúdo central*/
+            background-color: rgb(7, 83, 170);
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            padding-bottom: 25px;
+            
+
+        }
+
+        footer { /*Estilização do rodapé da página*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: rgb(219, 224, 223);
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            left: 0;
+
+        }
+
+        ul {/*Estilização das lista desordenada*/
+            list-style-type: none;
+            color: rgb(219, 224, 223);
+            gap: 20px;
+        }
+
+        a,
+        a:link {/*Estilização dos links*/
+            text-decoration: none;
+            color: rgb(219, 224, 223);
+            padding: 25px 45px;
+        }
+
+        #liMenu1, #liMenu2, #liMenu3, #liMenu4 { /*Estilização da listagem do menu principal para diferenciar do menu secundario de listas*/
+            float: left;
+        }
+
+        #li1 , #li2, #li3, #li4 { /*Estilização da listagem secundaria*/
+          list-style-type: circle;
+          list-style-position: inside;
+          padding-right: 50px;
+
+          
+        }
+
+        a:hover {/*Estilização do link quando passa o mouse por cima*/
+            background-color: rgb(5, 64, 173);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container menu">
+        <ul>
+            <li id="liMenu1"><a href="index.html">Sobre mim</a></li>
+            <li id="liMenu2"><a href="formacao.html">Formação</a></li>
+            <li id="liMenu3"><a href="portifolio.html">Portifólio</a></li>
+            <li id="liMenu4"><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header class="container">
+        <h1>
+            Formação acadêmica
+        </h1>
+    </header>
+    <article class="principal">
+     <ul>
+        <br><br><br>
+        <li id="li1">Inglês nível Master in English - CNA 2013 </li>
+        <br><br><br>
+        <li id="li2">Bacharelado em Administração - Uninter 2023</li>
+        <br><br><br>
+        <li id="li3">Curso HTML / CSS / JavaScript - Udemy 2024</li>
+        <br><br><br>
+        <li id="li4">Análise e Desenvolvimento de Sistemas - Uninter, formação em 2026</li>
+        <br><br><br>
+
+     </ul>
+      
+    </article> 
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>

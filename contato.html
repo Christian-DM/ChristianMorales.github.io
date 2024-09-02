@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Dias Morales</title>
+    <style>
+        body {/*Estilização do body*/
+            margin: 0;
+            background-color: rgb(7, 83, 170);
+        }
+
+        .container {
+            display: grid;
+        }
+        nav {/*Menu de navegação principal*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(7, 83, 170);
+            border-bottom: 50px;
+        }
+
+        header { /*estilização do cabeçalho*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu {/*Centraliza o menu*/
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .principal {/*Estilização do conteúdo central*/
+            background-color: rgb(7, 83, 170);
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            padding-bottom: 25px;
+
+        }
+        #p1 { /*Estilização do paragrafo 1*/
+            font-size: 25px;
+        }
+        form { /*Estilização do formulário*/
+            padding-top: 50px;
+            padding-left: 40px;
+            color: aliceblue;
+            text-decoration: none;
+            
+
+        }
+
+        footer {/*estilização do rodapé da página*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(5, 64, 173);
+            color: rgb(219, 224, 223);
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            left: 0;
+        }
+
+        ul {/*Estilização das lista desordenada*/
+            list-style-type: none;
+            color: rgb(219, 224, 223);
+            gap: 20px;
+        }
+
+        a,
+        a:link {/*Estilização dos links das páginas*/
+            text-decoration: none;
+            color: rgb(219, 224, 223);
+            padding: 25px 45px;
+        }
+
+        li {/*Estilização das listas ordenadas*/
+            float: left;
+        }
+        #button {/*Estilização do botão enviar*/
+            background-color: rgb(5, 64, 173);
+            color: aliceblue;
+            border-style: double;
+            border-color: aliceblue;
+            
+        }
+
+        a:hover {/*Estilização do link quando passa o mouse por cima*/
+            background-color: rgb(5, 64, 173);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header class="container">
+        <h1>
+            Contato
+        </h1>
+        <p id="p1">Quer entrar em contato comigo? Deixe uma mensagem!</p>
+        <br><br>
+    </header>
+    <form>
+        <h2>Preencha o formulário abaixo:</h2>
+        <table>
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail:</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="msg">Digite sua mensagem:</label></td>
+                <td><textarea name="msg" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="button">Enviar</button></td>
+            </tr>
+        </table>
+    </form> 
+    <br><br><br><br>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
